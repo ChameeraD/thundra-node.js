@@ -2,12 +2,12 @@ const express = require("express");
 const thundra = require("@thundra/core");
 
 const app = express();
-app.use(thundra.expressMW());
+
 
 thundra.init({
-    apiKey:'a77b6f7c-0b87-42c7-9b65-5a83ff64330c'
+    apiKey:"a77b6f7c-0b87-42c7-9b65-5a83ff64330c"
 })
-
+app.use(thundra.expressMW());
 app.use(express.json()); // parsing application/json
 app.use(express.urlencoded({ extended: true })); // parsing application/x-www-form-urlencoded
 
