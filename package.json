@@ -11,7 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "@thundra/core": "^2.13.30",
-    "Express": "^3.0.1",
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "request": "^2.88.2"
